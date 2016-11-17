@@ -1,90 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
-    <title>4 Brothers</title>
+    <title>5 Brothers</title>
 
-    <!-- Bootstrap core CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style2.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
 
-  <body>
+</head>
 
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">4 Brothers</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a  href="tel:14126058852" >412-605-8852</a>
+                    </li>
+                </ul>
+                              
+                    
+              
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+       
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" id="logo" style="background-image:url('img/logo2.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/truckLoad.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/test2.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+
+    <!-- Page Content -->
     <div class="container">
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">412-605-8852</h3>
-      </div>
 
-      <div class="jumbotron">
-        <h1>4 Brothers North Hills Lawn Services</h1>
-        <p class="lead">We are a local landscaping service provider that takes pride in making our community look better.  So give us a fucking call and we'll make you shit look nice n'at!</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-
-          <h4>Lawn Maintenence</h4>
-          <p>We'll mow your lawn and shit.  Fuckin, bag that shit up and haul it out.</p>
-
-          <h4>Landscaping</h4>
-          <p>Replace your old bushes with new shit.  We will even trim your old shit if that what you want.  Get you some new much, make you shit look so good the damn neighbors will think its a crime.</p>
-
-          <h4>Tree Removal</h4>
-          <p>Have a tree you dont like? We can trim that shit, or get rid of the son of a bitch.</p>
+        <div class="jumbotron" id="about">
+            <h2>About Us</h2>
+            <p>We are a locally owned and operated, full-service landscape company.  Bacon ipsum dolor amet rump tri-tip pork belly shankle, strip steak pork chop brisket tongue filet mignon ribeye ball tip kielbasa jerky. Corned beef biltong sirloin, sausage rump chuck drumstick salami swine fatback pork belly. Tongue flank cow shoulder kielbasa. Shank shoulder t-bone prosciutto pork chop, porchetta flank turkey hamburger salami ham hock leberkas. Pork chop bresaola swine tongue. Burgdoggen brisket beef tenderloin bacon. Pancetta capicola corned beef leberkas.<br>
+            <br>
+            Swine turducken sausage venison drumstick brisket doner. Ham beef ribs hamburger t-bone, short loin cupim biltong jowl. Landjaeger sausage venison corned beef drumstick, ribeye pancetta jerky pork loin turducken. Drumstick meatball leberkas, venison brisket pork loin bresaola. Porchetta pork loin meatball turkey, pork tail venison flank spare ribs ham shoulder pastrami pork belly bacon tri-tip. </p>
         </div>
 
-        <div class="col-lg-6">
-          <h4>Snow?</h4>
-          <p>Fuck that shit! Dont go out in the cold and have a heart attack shoveling that god foresaken driveway, slip on ice, fall on your ass and make some kind of death snow angel.  Stay warm by the fire, and let a couple of nice fellas take care of it.  </p>
-
-          <h4>Leaves</h4>
-          <p>Do you have enough leaves in you yard to fill the Grand Canyon? Gutters clogged with them som'bitches? We staff leaf-ninjas that will make them dissappear faster then a rabbit humps.</p>
-
-          <h4>Need split fire wood?</h4>
-          <p>We have more wood then 1,000 foot tall pinocchio with a boner.   </p>
+        <!-- Page Header -->
+        <div class="row" id="services">
+            <div class="col-lg-12">
+                <h1 class="page-header" >Services we provide
+                    <small>Secondary Text</small>
+                </h1>
+            </div>
         </div>
-      </div>
+        <!-- /.row -->
 
-      <footer class="footer">
-        <p>&copy; 2016 Company, Inc.</p>
-      </footer>
+        <!-- Projects Row 1-->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded " src="img/leaves-before.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Gutter clean out</a>
+                </h3>
+                <p>Leaves can cause a major problem in the function of your gutters causing water to overflow.  In some cases the excess weight of too much water can lead to your gutter ripping off your house</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="img/leaves-after.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Clean Gutter</a>
+                </h3>
+                <p>A clean gutter lets rain water flow freely.</p>
+            </div>
+        </div>
+        <!-- /.row -->
 
-    </div> <!-- /container -->
+        <!-- Projects Row 2-->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="img/ls1-before.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Mulching</a>
+                </h3>
+                <p>Benifits of mulching.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="img/ls1-after.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Mulching</a>
+                </h3>
+                <p>Mulching makes beds look clean.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row 3 -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="img/ls2-before.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Before Mulch</a>
+                </h3>
+                <p>.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="img/ls2-after.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">After Mulch</a>
+                </h3>
+                <p>A clean, well maintinaed lanscape can imcrease you property value.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row 4-->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="img/ls3-before.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Flower beds overgrown?</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="img/ls3-after.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Cleaned Up</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row 5-->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="img/ls4-before.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">A bit overgrown!</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="img/ls4-after.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Hardscapes are a great alternitive!</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="jumbotron" id="contact">
+        <h1 class="text-center">412-605-8852</h1>
+        </div>  
 
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+        <hr>
+
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"                                        
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
 </html>
