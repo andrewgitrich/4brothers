@@ -7,7 +7,7 @@ $('.carousel').carousel({
 	
 
 //need to create function if api fails to load
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=pittsburgh&appid=b05fa92c08f170c8e9d03b1a7891eb40",
+$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=pittsburgh&appid=b05fa92c08f170c8e9d03b1a7891eb40",
 	 function(data){
 	 	var condition = data.weather[0].icon;
 	 	var kelvin = data.main.temp;
