@@ -18,6 +18,8 @@ $.ajax({
 		console.log(icon);
 		
 		$("#icon").append('<img src=' + 'png/' + icon + '.png' + '>');
+		$("#temp").append(Math.floor(data.currently.temperature) + "°F");
+		$("#description").append(data.currently.summary);
 	},
 	type: "GET",
 	});
