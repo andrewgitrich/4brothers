@@ -7,24 +7,22 @@ $('.carousel').carousel({
 	
 
 //need to create function if api fails to load
-$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=pittsburgh&appid=b05fa92c08f170c8e9d03b1a7891eb40",
-	 function(data){
-	 	var condition = data.weather[0].icon;
-	 	var kelvin = data.main.temp;
-	 	
-	 	function temp(kelvin){
-	 		return kelvin * 1.8 - 459.67;
-	 	}
-	 	
-	 	console.log(kelvin);
-	 	console.log(Math.floor(temp(kelvin)));
-		console.log(condition);
 
-		$("#weather").append('<img src='+ 'https://openweathermap.org/img/w/'+ condition + '.png' + '>');
-		$("#description").text(data.weather[0].description);
-		$("#temp").text(Math.floor(temp(kelvin)) + "°F");
+$.ajax({
+	url: "https://api.darksky.net/forecast/e5e9137e0dcfcfbf68e0f371041fd1ac/40.4406,-79.9959",
+	dataType: "jsonp",
+	
+	success: function(data){
+		console.log(data);
+		var icon = data.currently.icon;
+		console.log(icon);
 		
-		});
+		$("#icon").append('<img src=' + 'png/' + icon + '.png' + '>');
+	},
+	type: "GET",
+	});
+
+
 
 
 });	
@@ -32,5 +30,6 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=pittsburgh&appid=b0
 
 
 
-//b05fa92c08f170c8e9d03b1a7891eb40 
-//http://api.openweathermap.org/data/2.5/weather?q=pittsburgh&appid=b05fa92c08f170c8e9d03b1a7891eb40
+//e5e9137e0dcfcfbf68e0f371041fd1ac
+//https://api.darksky.net/forecast/e5e9137e0dcfcfbf68e0f371041fd1ac/40.4406, 79.9959
+//darksky
